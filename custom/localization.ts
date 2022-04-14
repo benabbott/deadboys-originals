@@ -2,7 +2,7 @@ const localizationJson: LocalizationText = {
   en: {
     header: {
       highlightText: 'E X C L U S I V E',
-      headerLine1: 'CRYPTO CADETS',
+      headerLine1: 'DEADBOYS INC',
       headerLine2: 'COLLECTIBLE NFTS',
       description:
         'These exclusive crypto cadets were created to help showcase the Proton Market.',
