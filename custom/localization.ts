@@ -2,10 +2,10 @@ const localizationJson: LocalizationText = {
   en: {
     header: {
       highlightText: 'E X C L U S I V E',
-      headerLine1: 'DEADBOYS INC',
+      headerLine1: 'DEAD BOYS INC',
       headerLine2: 'COLLECTIBLE NFTS',
       description:
-        'These exclusive crypto cadets were created to help showcase the Proton Market.',
+        'Check out our exclusive DEADBOYS ...',
       buttonText: 'LABEL',
     },
     navbar: {

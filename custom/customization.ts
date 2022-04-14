@@ -123,7 +123,7 @@ const customizationJson: ThemeProps = {
     },
   },
   featuredSection: {
-    carousel: true,
+    carousel: false,
     titleFont: {
       type: 'h2',
       color: '#000000',
@@ -135,7 +135,7 @@ const customizationJson: ThemeProps = {
   header: {
     image: '/header-image.png',
     imagePlacement: 'right',
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     highlightFont: {
       isShown: true,
       type: 'paragraph',
@@ -143,7 +143,7 @@ const customizationJson: ThemeProps = {
     },
     mainHeadingFont: {
       type: 'h1',
-      color: '#000000',
+      color: '#ffffff',
     },
     subheadingFont: {
       type: 'h4',
@@ -151,9 +151,9 @@ const customizationJson: ThemeProps = {
     },
     button: {
       isShown: true,
-      textColor: 'white',
+      textColor: 'black',
       textFont: 'caption',
-      backgroundColor: 'black',
+      backgroundColor: 'white',
       link: 'https:/google.com',
     },
   },
