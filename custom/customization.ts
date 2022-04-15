@@ -54,26 +54,26 @@ const customizationJson: ThemeProps = {
     navLinks: [
       // recommended 3 - 5
       {
-        link: 'https://google.com',
-        color: '#000000',
+        link: 'https://deadboysinc.com/',
+        color: '#ffffff',
       },
       {
-        link: 'https://google.com',
-        color: '#000000',
+        link: 'https://deadboysinc.com/,
+        color: '#ffffff',
       },
       {
-        link: 'https://google.com',
-        color: '#000000',
+        link: 'https://deadboysinc.com/',
+        color: '#ffffff',
       },
       {
         link: '/my-items', // always recommended to keep
-        color: '#000000',
+        color: '#ffffff',
       },
     ],
     balanceSubtitleFontType: 'label',
-    buttonFontColor: '#000000',
+    buttonFontColor: '#ffffff',
     buttonBackgroundColor: 'transparent',
-    buttonBorderColor: '#000000',
+    buttonBorderColor: '#ffffff',
     buttonFontType: 'label',
     bottomBorderColor: '#cccccc',
   },
