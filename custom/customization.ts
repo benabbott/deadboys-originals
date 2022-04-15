@@ -48,7 +48,7 @@ const customizationJson: ThemeProps = {
   navbar: {
     logo: '/logo.png',
     logoLink: '/',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#000000',
     defaultAvatarImage: '/default-avatar.png',
     navLinkFontType: 'label',
     navLinks: [
@@ -58,7 +58,7 @@ const customizationJson: ThemeProps = {
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/,
+        link: 'https://deadboysinc.com/',
         color: '#ffffff',
       },
       {
