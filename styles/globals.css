@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
@@ -30,4 +30,10 @@ a {
 .uguHT {
   width: auto;
   height: 80px;
+}
+
+/* detailPage */
+
+div#__next {
+  background-color: #000000;
 }

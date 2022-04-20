@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!-- saved from url=(0212)http://localhost:6006/iframe.html?id=example-navbar-%2Ddefault&viewMode=story&args=navbarStyles.navLinks[1].color:!hex(ffff);navbarStyles.navLinks[2].color:!hex(000000);navbarStyles.navLinks[3].color:!hex(000000) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Webpack App</title><meta name="viewport" content="width=device-width,initial-scale=1"><!--<base target="_parent">--><base href="." target="_parent"><style>:not(.sb-show-preparing-story) > .sb-preparing-story,
+  :not(.sb-show-preparing-docs) > .sb-preparing-docs,
+  :not(.sb-show-nopreview) > .sb-nopreview,
+  :not(.sb-show-errordisplay) > .sb-errordisplay {
+    display: none;
+  }
+
+  .sb-show-main.sb-main-centered {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .sb-show-main.sb-main-centered #root {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 1rem;
+    max-height: 100%; /* Hack for centering correctly in IE11 */
+  }
+
+  /* Vertical centering fix for IE11 */
+  @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .sb-show-main.sb-main-centered:after {
+      content: '';
+      min-height: inherit;
+      font-size: 0;
+    }
+  }
+
+  .sb-show-main.sb-main-fullscreen {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .sb-show-main.sb-main-padded {
+    margin: 0;
+    padding: 1rem;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .sb-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    font-family: 'Nunito Sans', -apple-system, '.SFNSText-Regular', 'San Francisco',
+      BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: auto;
+  }
+
+  .sb-heading {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin: 10px 0;
+    padding-right: 25px;
+  }
+
+  .sb-nopreview {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .sb-nopreview_main {
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.03);
+  }
+
+  .sb-nopreview_heading {
+    text-align: center;
+  }
+
+  .sb-errordisplay {
+    border: 20px solid rgb(187, 49, 49);
+    background: #222;
+    color: #fff;
+    z-index: 999999;
+  }
+
+  .sb-errordisplay_code {
+    padding: 10px;
+    background: #000;
+    color: #eee;
+    font-family: 'Operator Mono', 'Fira Code Retina', 'Fira Code', 'FiraCode-Retina', 'Andale Mono',
+      'Lucida Console', Consolas, Monaco, monospace;
+  }
+
+  .sb-errordisplay pre {
+    white-space: pre-wrap;
+  }
+
+  @-webkit-keyframes sb-rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes sb-rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes sb-glow {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+  @keyframes sb-glow {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  /* We display the preparing loaders *over* the rendering story */
+  .sb-preparing-story,
+  .sb-preparing-docs {
+    background-color: white;
+  }
+
+  .sb-loader {
+    -webkit-animation: sb-rotate360 0.7s linear infinite;
+    animation: sb-rotate360 0.7s linear infinite;
+    border-color: rgba(97, 97, 97, 0.29);
+    border-radius: 50%;
+    border-style: solid;
+    border-top-color: #646464;
+    border-width: 2px;
+    display: inline-block;
+    height: 32px;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+    mix-blend-mode: difference;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transition: all 200ms ease-out;
+    vertical-align: top;
+    width: 32px;
+    z-index: 4;
+  }
+
+  .sb-previewBlock {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
+    margin: 25px auto 40px;
+    max-width: 600px;
+  }
+
+  .sb-previewBlock_header {
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0 0 inset;
+    display: flex;
+    gap: 14px;
+    height: 40px;
+    padding: 0 12px;
+  }
+
+  .sb-previewBlock_icon {
+    -webkit-animation: sb-glow 1.5s ease-in-out infinite;
+    animation: sb-glow 1.5s ease-in-out infinite;
+    background: #e6e6e6;
+    height: 14px;
+    width: 14px;
+  }
+  .sb-previewBlock_icon:last-child {
+    margin-left: auto;
+  }
+
+  .sb-previewBlock_body {
+    -webkit-animation: sb-glow 1.5s ease-in-out infinite;
+    animation: sb-glow 1.5s ease-in-out infinite;
+    height: 182px;
+    position: relative;
+  }
+
+  .sb-argstableBlock {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 25px auto 40px;
+    max-width: 600px;
+    text-align: left;
+    width: 100%;
+  }
+  .sb-argstableBlock th:first-of-type,
+  .sb-argstableBlock td:first-of-type {
+    padding-left: 20px;
+  }
+  .sb-argstableBlock th:nth-of-type(2),
+  .sb-argstableBlock td:nth-of-type(2) {
+    width: 35%;
+  }
+  .sb-argstableBlock th:nth-of-type(3),
+  .sb-argstableBlock td:nth-of-type(3) {
+    width: 15%;
+  }
+  .sb-argstableBlock th:laste-of-type,
+  .sb-argstableBlock td:laste-of-type {
+    width: 25%;
+    padding-right: 20px;
+  }
+  .sb-argstableBlock th span,
+  .sb-argstableBlock td span {
+    -webkit-animation: sb-glow 1.5s ease-in-out infinite;
+    animation: sb-glow 1.5s ease-in-out infinite;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    box-shadow: none;
+    color: transparent;
+  }
+  .sb-argstableBlock th {
+    padding: 10px 15px;
+  }
+
+  .sb-argstableBlock-body {
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 1px, rgba(0, 0, 0, 0.065) 0 0 0 1px;
+  }
+  .sb-argstableBlock-body tr {
+    background: transparent;
+    overflow: hidden;
+  }
+  .sb-argstableBlock-body tr:not(:first-child) {
+    border-top: 1px solid #e6e6e6;
+  }
+  .sb-argstableBlock-body tr:first-child td:first-child {
+    border-top-left-radius: 4px;
+  }
+  .sb-argstableBlock-body tr:first-child td:last-child {
+    border-top-right-radius: 4px;
+  }
+  .sb-argstableBlock-body tr:last-child td:first-child {
+    border-bottom-left-radius: 4px;
+  }
+  .sb-argstableBlock-body tr:last-child td:last-child {
+    border-bottom-right-radius: 4px;
+  }
+  .sb-argstableBlock-body td {
+    background: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+  }
+  .sb-argstableBlock-body td:not(:first-of-type) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sb-argstableBlock-body button {
+    -webkit-animation: sb-glow 1.5s ease-in-out infinite;
+    animation: sb-glow 1.5s ease-in-out infinite;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: transparent;
+    display: inline;
+    font-size: 12px;
+    line-height: 1;
+    padding: 10px 16px;
+  }
+
+  .sb-argstableBlock-summary {
+    margin-top: 4px;
+  }
+
+  .sb-argstableBlock-code {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 2px 5px;
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
+    if (window.top !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+      window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.top.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+      window.top.__VUE_DEVTOOLS_CONTEXT__ = window.document;
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('unable to connect to top frame for connecting dev tools');
+  }
+
+  window.onerror = function onerror(message, source, line, column, err) {
+    if (window.CONFIG_TYPE !== 'DEVELOPMENT') return;
+    // eslint-disable-next-line no-var, vars-on-top
+    var xhr = new window.XMLHttpRequest();
+    xhr.open('POST', '/runtime-error');
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.send(
+      JSON.stringify({
+        /* eslint-disable object-shorthand */
+        message: message,
+        source: source,
+        line: line,
+        column: column,
+        error: err && { message: err.message, name: err.name, stack: err.stack },
+        origin: 'preview',
+        /* eslint-enable object-shorthand */
+      })
+    );
+  };</script><link key="preconnect" rel="preconnect" href="https://fonts.gstatic.com/"><link key="font" href="./css2" rel="stylesheet"><style>#root[hidden],
+      #docs-root[hidden] {
+        display: none !important;
+      }</style><style>/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+</style><style>html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline-color: black;
+}
+</style><style data-styled="active" data-styled-version="5.3.5">.fpNbdX{max-width:1352px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0px auto;}@media (max-width:1500px){.fpNbdX{max-width:90%;}}.deGIZY{width:100%;background-color:#f2f2f2;}.hzpxbf{padding:60px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.geDSCb{text-align:center;margin-bottom:60px;font-family:Bebas Neue;font-weight:400;font-size:32px;color:#000000;}.bxaAHX{width:24px;height:24px;}.kblHeK{width:auto;height:42px;}.jwuRFi{width:auto;height:60px;}.dVQjcJ{width:100%;position:relative;border-bottom:1px solid #cccccc;background-color:#ffffff;height:96px;}.PaVId{width:100%;position:relative;border-bottom:1px solid #cccccc;background-color:#000000;height:96px;}.irVTBs{height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;position:relative;}.ckMroC{cursor:pointer;}@media (max-width:970px){.ckMroC{margin-left:16px;}}.dLEQVS{width:85%;margin-right:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}@media (max-width:970px){.dLEQVS{display:none;}}.hTbIbk{border:2px solid #ffffff;height:42px;padding:0 15px;color:#ffffff;background-color:transparent;cursor:pointer;font-family:Roboto;font-size:14px;font-weight:600;}.cA-Dqkm{display:none;}@media (max-width:970px){.cA-Dqkm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}.gFgMfE{max-width:45%;width:45%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}.gFgMfE a{font-family:Roboto;font-size:14px;font-weight:600;}.kuYOCZ{display:none;z-index:1;width:100%;height:100%;position:fixed;top:0;left:0;cursor:pointer;}@media (max-width:970px){.kuYOCZ{background-color:rgba(0,0,0,0.7);}}.LobWE{min-width:300px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:8px;border:1px solid lightgrey;background-color:#ffffff;padding:0 24px 24px;cursor:pointer;}.bdLXdi{color:#000000;font-family:Roboto;font-size:14px;font-weight:600;margin:16px 0;line-height:1.71;}.eAeYPa{width:calc(300px - 48px);color:#000000;font-family:Roboto;font-size:18px;font-weight:400;line-height:1.78;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;}.llxnwS{color:#666666;font-family:Roboto;font-size:14px;font-weight:600;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;line-height:1.71;margin-bottom:16px;}.fCwSlq{color:#377EFF;font-family:Roboto;font-size:18px;font-weight:400;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;line-height:1.78;}.dNGMYm{position:absolute;left:0;top:0;right:0;bottom:0;-webkit-animation:bzMmhU 1s infinite;animation:bzMmhU 1s infinite;}.cMmtbx{overflow:hidden;-webkit-animation:RcxFP 0.5s linear;animation:RcxFP 0.5s linear;}.koXGMS{position:relative;width:100%;height:270px;padding-bottom:100%;border-radius:8px;margin-bottom:24px;background-color:transprent;border-radius:8px;}.eeiCVq{position:absolute;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%;}.dSyHAo{width:100%;max-height:100%;outline:none;z-index:1;}.ijATDM{width:100%;display:inline-grid;grid-column-gap:24px;grid-row-gap:50px;grid-template-columns:repeat(4,minmax(0,1fr));}@media (max-width:1224px){.ijATDM{grid-template-columns:repeat(3,minmax(0,1fr));}}@media (max-width:970px){.ijATDM{grid-template-columns:repeat(2,minmax(0,1fr));}}@media (max-width:600px){.ijATDM{grid-template-columns:repeat(1,minmax(0,1fr));}}@-webkit-keyframes RcxFP{0%{opacity:0;}100%{opacity:1;}}@keyframes RcxFP{0%{opacity:0;}100%{opacity:1;}}@-webkit-keyframes bzMmhU{0%{background-color:#ffffff;}50%{background-color:#eaeaea;}100%{background-color:#ffffff;}}@keyframes bzMmhU{0%{background-color:#ffffff;}50%{background-color:#eaeaea;}100%{background-color:#ffffff;}}</style><script charset="utf-8" src="./main.c3f872f701436cc863ed.hot-update.js"></script></head><body class="sb-main-padded sb-show-main" style="overflow: scroll;"><div class="sb-preparing-story sb-wrapper"><div class="sb-loader"></div></div><div class="sb-preparing-docs sb-wrapper"><div class="sb-previewBlock"><div class="sb-previewBlock_header"><div class="sb-previewBlock_icon"></div><div class="sb-previewBlock_icon"></div><div class="sb-previewBlock_icon"></div><div class="sb-previewBlock_icon"></div></div><div class="sb-previewBlock_body"><div class="sb-loader"></div></div></div><table aria-hidden="true" class="sb-argstableBlock"><thead class="sb-argstableBlock-head"><tr><th><span>Name</span></th><th><span>Description</span></th><th><span>Default</span></th><th><span>Control</span></th></tr></thead><tbody class="sb-argstableBlock-body"><tr><td><span>propertyName</span><span title="Required">*</span></td><td><div><span>This is a short description</span></div><div class="sb-argstableBlock-summary"><div><span class="sb-argstableBlock-code">summary</span></div></div></td><td><div><span class="sb-argstableBlock-code">defaultValue</span></div></td><td><button>Set string</button></td></tr><tr><td><span>propertyName</span><span>*</span></td><td><div><span>This is a short description</span></div><div class="sb-argstableBlock-summary"><div><span class="sb-argstableBlock-code">summary</span></div></div></td><td><div><span class="sb-argstableBlock-code">defaultValue</span></div></td><td><button>Set string</button></td></tr><tr><td><span>propertyName</span><span>*</span></td><td><div><span>This is a short description</span></div><div class="sb-argstableBlock-summary"><div><span class="sb-argstableBlock-code">summary</span></div></div></td><td><div><span class="sb-argstableBlock-code">defaultValue</span></div></td><td><button>Set string</button></td></tr></tbody></table></div><div class="sb-nopreview sb-wrapper"><div class="sb-nopreview_main"><h1 class="sb-nopreview_heading sb-heading">No Preview</h1><p>Sorry, but you either have no stories or none are selected somehow.</p><ul><li>Please check the Storybook config.</li><li>Try reloading the page.</li></ul><p>If the problem persists, check the browser console, or the terminal you've run Storybook from.</p></div></div><div class="sb-errordisplay sb-wrapper"><pre id="error-message" class="sb-heading"></pre><pre class="sb-errordisplay_code"><code id="error-stack"></code></pre></div><div id="root"><div class="Navbarstyled__NavbarContainer-sc-1fe22rp-2 PaVId"><nav class="MaxWidthstyled__MaxWidth-sc-19pgylg-0 Navbarstyled__Wrapper-sc-1fe22rp-3 fpNbdX irVTBs"><section class="Navbarstyled__MobileOnlySection-sc-1fe22rp-8 cA-Dqkm"><img src="./hamburger-icon.svg" height="24px" width="24px" class="indexstyled__Image-sc-18dxq3o-0 bxaAHX"><a href="http://localhost:6006/" class="Navbarstyled__LogoContainer-sc-1fe22rp-4 ckMroC"><img src="./logo.png" height="42px" width="auto" class="indexstyled__Image-sc-18dxq3o-0 kblHeK"></a></section><section class="Navbarstyled__DesktopOnlySection-sc-1fe22rp-5 dLEQVS"><a href="http://localhost:6006/" class="Navbarstyled__LogoContainer-sc-1fe22rp-4 ckMroC"><img src="./logo.png" height="60px" width="auto" class="indexstyled__Image-sc-18dxq3o-0 jwuRFi"></a><section class="Navbarstyled__NavLinks-sc-1fe22rp-9 gFgMfE"><a href="https://deadboysinc.com/">BIO</a><a href="https://deadboysinc.com/">BUSINESS</a><a href="https://deadboysinc.com/">AUCTIONS</a><a href="http://localhost:6006/my-items">MY ITEMS</a></section></section><button class="Navbarstyled__LoginButton-sc-1fe22rp-7 hTbIbk">Connect Wallet</button><div class="Navbarstyled__GradientBackground-sc-1fe22rp-13 kuYOCZ"></div></nav></div></div><div id="docs-root" hidden="true"></div><script>window['CONFIG_TYPE'] = "DEVELOPMENT";
+          
+      
+          
+            window['LOGLEVEL'] = "info";
+          
+      
+          
+            window['FRAMEWORK_OPTIONS'] = {};
+          
+      
+          
+      
+          
+            window['FEATURES'] = {"postcss":true,"emotionAlias":true,"warnOnLegacyHierarchySeparator":true};
+          
+      
+          
+            window['STORIES'] = [{"titlePrefix":"","directory":"./components","files":"**/*.stories.tsx","importPathMatcher":"^\\.[\\\\\\/](?:components(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^\\/]*?\\.stories\\.tsx)$"}];
+          
+      
+          
+            window['SERVER_CHANNEL_URL'] = "ws://localhost:6006/storybook-server-channel";</script><script src="./runtime_main.iframe.bundle.js"></script><script src="./vendors_main.iframe.bundle.js"></script><script src="./main.iframe.bundle.js"></script></body></html>

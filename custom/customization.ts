@@ -1,8 +1,8 @@
 const customizationJson: ThemeProps = {
-  collection: '355154214155' ,
-  collection2: '352215253242' ,
+  collection: '352215253242' ,
+  //collection2: '352215253242' '355154214155',
   owner: 'harrybird',
-  owner2: 'harrybird',
+  //owner2: 'harrybird',
   typography: {
     h1: {
       font: 'Bebas Neue',
@@ -99,22 +99,22 @@ const customizationJson: ThemeProps = {
     logo: '/logo.png',
     socialMediaLinks: [
       {
-        link: 'https://facebook.com',
+        link: 'https://www.facebook.com/deadboysinc',
         type: 'facebook',
         color: '#1877F2',
       },
       {
-        link: 'https://twitter.com',
+        link: 'https://twitter.com/DeadboysNFTs',
         type: 'twitter',
         color: '#1DA1F2',
       },
       {
-        link: 'https://youtube.com',
-        type: 'youtube',
+        link: 'https://www.instagram.com/thedeadboysinc/',
+        type: 'instagram',
         color: '#FF0000',
       },
     ],
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     borderColor: 'transparent',
   },
   nftCard: {
@@ -215,9 +215,9 @@ const customizationJson: ThemeProps = {
       color: '#c71f3e',
     },
     button: {
-      textColor: 'white',
+      textColor: 'black',
       textFont: 'caption',
-      backgroundColor: 'black',
+      backgroundColor: 'white',
     },
     dropdown: {
       borderColor: '#f2f2f2',
@@ -441,8 +441,6 @@ export interface FontProps {
 export type ThemeProps = {
   collection: string;
   owner: string;
-  collection2: string;
-  owner2: string;
   typography: Typography;
   navbar: NavbarProps;
   footer: FooterProps;
