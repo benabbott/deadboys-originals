@@ -60,27 +60,27 @@ const customizationJson: ThemeProps = {
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/',
+        link: 'https://deadboysinc.benabbott.design/gallery/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/',
+        link: 'https://deadboysinc.benabbott.design/merch/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/',
+        link: 'https://deadboysinc.benabbott.design/blog/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/',
+        link: 'https://deadboysinc.benabbott.design/team/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/',
+        link: 'https://deadboysinc.benabbott.design/community/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/',
+        link: 'https://deadboysinc.benabbott.design/members-area/',
         color: '#ffffff',
       },
       {
