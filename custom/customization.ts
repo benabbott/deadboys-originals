@@ -1,6 +1,8 @@
 const customizationJson: ThemeProps = {
-  collection: '352215253242',
+  collection: '355154214155' ,
+  collection2: '352215253242' ,
   owner: 'harrybird',
+  owner2: 'harrybird',
   typography: {
     h1: {
       font: 'Bebas Neue',
@@ -46,13 +48,29 @@ const customizationJson: ThemeProps = {
     },
   },
   navbar: {
-    logo: '/logo.png',
-    logoLink: '/',
+    logo: 'https://deadboysinc.benabbott.design/wp-content/uploads/DB_White-2.png',
+    logoLink: 'https://deadboysinc.com/',
     backgroundColor: '#000000',
     defaultAvatarImage: '/default-avatar.png',
     navLinkFontType: 'label',
     navLinks: [
       // recommended 3 - 5
+      {
+        link: 'http://shop.deadboysinc.com/',
+        color: '#ffffff',
+      },
+      {
+        link: 'https://deadboysinc.com/',
+        color: '#ffffff',
+      },
+      {
+        link: 'https://deadboysinc.com/',
+        color: '#ffffff',
+      },
+      {
+        link: 'https://deadboysinc.com/',
+        color: '#ffffff',
+      },
       {
         link: 'https://deadboysinc.com/',
         color: '#ffffff',
@@ -423,6 +441,8 @@ export interface FontProps {
 export type ThemeProps = {
   collection: string;
   owner: string;
+  collection2: string;
+  owner2: string;
   typography: Typography;
   navbar: NavbarProps;
   footer: FooterProps;

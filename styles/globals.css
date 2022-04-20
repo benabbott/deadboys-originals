@@ -18,3 +18,16 @@ a {
 *:focus-visible {
   outline-color: black;
 }
+
+/* Menu links */
+
+.hasmLd a {
+  color: white;
+}
+
+/* logo height */
+
+.uguHT {
+  width: auto;
+  height: 80px;
+}
