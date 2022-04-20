@@ -126,9 +126,9 @@ const customizationJson: ThemeProps = {
     carousel: false,
     titleFont: {
       type: 'h2',
-      color: '#000000',
+      color: '#ffffff',
     },
-    backgroundColor: '#f2f2f2',
+    backgroundColor: '#000000',
     carouselButtonsBackgroundColor: '#ffffff',
     carouselButtonsBorderColor: 'lightgrey',
   },
