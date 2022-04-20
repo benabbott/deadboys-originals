@@ -49,7 +49,7 @@ const customizationJson: ThemeProps = {
   },
   navbar: {
     logo: 'https://deadboysinc.benabbott.design/wp-content/uploads/DB_White-2.png',
-    logoLink: 'https://deadboysinc.com/',
+    logoLink: 'https://deadboysinc.benabbott.design',
     backgroundColor: '#000000',
     defaultAvatarImage: '/default-avatar.png',
     navLinkFontType: 'label',
