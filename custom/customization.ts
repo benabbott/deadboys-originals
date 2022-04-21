@@ -1,6 +1,5 @@
 const customizationJson: ThemeProps = {
-  collection: '352215253242' ,
-  //collection2: '352215253242' '355154214155',
+  collection: '352215253242,355154214155' ,
   owner: 'harrybird',
   //owner2: 'harrybird',
   typography: {
@@ -48,8 +47,8 @@ const customizationJson: ThemeProps = {
     },
   },
   navbar: {
-    logo: 'https://deadboysinc.benabbott.design/wp-content/uploads/DB_White-2.png',
-    logoLink: 'https://deadboysinc.benabbott.design',
+    logo: 'https://staging.deadboysinc.com/wp-content/uploads/DB_White-2.png',
+    logoLink: 'https://staging.deadboysinc.com',
     backgroundColor: '#000000',
     defaultAvatarImage: '/default-avatar.png',
     navLinkFontType: 'label',
@@ -60,27 +59,27 @@ const customizationJson: ThemeProps = {
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.benabbott.design/gallery/',
+        link: 'https://staging.deadboysinc.com/gallery/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.benabbott.design/merch/',
+        link: 'https://staging.deadboysinc.com/merch/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.benabbott.design/blog/',
+        link: 'https://staging.deadboysinc.com/blog/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.benabbott.design/team/',
+        link: 'https://staging.deadboysinc.com/team/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.benabbott.design/community/',
+        link: 'https://staging.deadboysinc.com/community/',
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.benabbott.design/members-area/',
+        link: 'https://staging.deadboysinc.com/members-area/',
         color: '#ffffff',
       },
       {
