@@ -1,5 +1,5 @@
 const customizationJson: ThemeProps = {
-  collection: '352215253242,355154214155' ,
+  collection: '355154214155' ,
   owner: 'harrybird',
   typography: {
     h1: {
