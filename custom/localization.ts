@@ -29,7 +29,7 @@ const localizationJson: LocalizationText = {
       soldOut: 'SOLD OUT',
     },
     featuredSection: {
-      heading: 'Gravedigger Collection', // optional
+      heading: 'Original Collection', // optional
     },
     myItemsPage: {
       header: 'MY ITEMS',
