@@ -47,8 +47,8 @@ const customizationJson: ThemeProps = {
     },
   },
   navbar: {
-    logo: 'https://staging.deadboysinc.com/wp-content/uploads/DB_White-2.png',
-    logoLink: 'https://staging.deadboysinc.com',
+    logo: 'https://deadboysinc.com/wp-content/uploads/DB_White-2.png',
+    logoLink: 'https://deadboysinc.com',
     backgroundColor: '#000000',
     defaultAvatarImage: '/default-avatar.png',
     navLinkFontType: 'label',
@@ -59,23 +59,23 @@ const customizationJson: ThemeProps = {
         color: '#ffffff',
       },
       {
-        link: 'https://staging.deadboysinc.com/merch/',
+        link: 'https://deadboysinc.com/merch/',
         color: '#ffffff',
       },
       {
-        link: 'https://staging.deadboysinc.com/blog/',
+        link: 'https://deadboysinc.com/blog/',
         color: '#ffffff',
       },
       {
-        link: 'https://staging.deadboysinc.com/team/',
+        link: 'https://deadboysinc.com/team/',
         color: '#ffffff',
       },
       {
-        link: 'https://staging.deadboysinc.com/community/',
+        link: 'https://deadboysinc.com/community/',
         color: '#ffffff',
       },
       {
-        link: 'https://staging.deadboysinc.com/members-area/',
+        link: 'https://deadboysinc.com/members-area/',
         color: '#ffffff',
       },
       {
