@@ -3,20 +3,20 @@ const localizationJson: LocalizationText = {
     header: {
       highlightText: 'E X C L U S I V E',
       headerLine1: 'DEAD BOYS INC',
-      headerLine2: 'COLLECTIBLE NFTS',
+      headerLine2: 'ORIGINAL COLLECTION',
       description:
-        'Check out our exclusive DEADBOYS ...',
-      buttonText: 'LABEL',
+        'Check out our other DEADBOY collections ...',
+      buttonText: 'VIEW GRAVEDIGGERS COLLECTION',
     },
     navbar: {
-      navLinks: ['Buy a DeadBoy', 'Gallery', 'Merch', 'Blog', 'Team', 'Community', 'Members', 'My Items'],
+      navLinks: ['Buy a DeadBoy', 'Merch', 'Blog', 'Team', 'Community', 'Members', 'My Items'],
       balanceText: 'Balance',
       loginText: 'Connect Wallet',
     },
     detailPage: {
       priceLabelText: 'PRICE',
       editionLabelText: 'EDITION SIZE',
-      placeholderPriceText: 'NOT FOR SALE',
+      placeholderPriceText: 'AVAILABLE ON PROTON MARKET',
       placeholderDropdownText: 'NO ASSETS',
       buyButtonText: 'BUY NOW',
       viewButtonText: 'VIEW ON PROTON MARKET',
@@ -26,7 +26,7 @@ const localizationJson: LocalizationText = {
     nftCard: {
       nftsLeft: 'LEFT',
       nftsOwnedForSale: 'FOR SALE',
-      soldOut: 'SOLD OUT',
+      soldOut: 'MORE INFO',
     },
     featuredSection: {
       heading: 'Original Collection', // optional

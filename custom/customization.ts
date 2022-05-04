@@ -1,4 +1,5 @@
 const customizationJson: ThemeProps = {
+  // collection: 'original=352215253242,gravediggers=355154214155' ,
   collection: '355154214155' ,
   owner: 'harrybird',
   typography: {
@@ -55,10 +56,6 @@ const customizationJson: ThemeProps = {
       // recommended 3 - 5
       {
         link: 'http://shop.deadboysinc.com/',
-        color: '#ffffff',
-      },
-      {
-        link: 'https://staging.deadboysinc.com/gallery/',
         color: '#ffffff',
       },
       {
@@ -167,10 +164,10 @@ const customizationJson: ThemeProps = {
     },
     button: {
       isShown: true,
-      textColor: 'black',
+      textColor: 'white',
       textFont: 'caption',
-      backgroundColor: 'white',
-      link: 'https:/google.com',
+      backgroundColor: 'red',
+      link: 'https://originals.deadboysinc.com/',
     },
   },
   myItemsPage: {

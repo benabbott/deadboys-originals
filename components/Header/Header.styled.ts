@@ -113,7 +113,7 @@ export const SubHeaderText = styled.h2<{
 `;
 
 export const ButtonWrapperAnchor = styled.a.attrs({
-  target: '_blank',
+  target: '_self',
   rel: 'noreferrer',
 })`
   ${breakpoint.mobile`

@@ -61,7 +61,7 @@ export const getLowestPriceAsset = async (
     };
     const queryString = toQueryString(queryObject);
     const saleRes = await getFromApi<Sale[]>(
-      `${process.env.NEXT_PUBLIC_NFT_ENDPOINT}/atomicmarket/v1/sales?${queryString}`
+      `${process.env.NEXT_PUBLIC_NFT_ENDPOINT}/atomicmarket/v2/sales?${queryString}`
     );
 
     if (!saleRes.success) {
@@ -104,7 +104,7 @@ export const getSaleDataForTemplate = async (
       };
       const queryParams = toQueryString(queryObject);
       const result = await getFromApi<Asset[]>(
-        `${process.env.NEXT_PUBLIC_NFT_ENDPOINT}/atomicmarket/v1/sales?${queryParams}`
+        `${process.env.NEXT_PUBLIC_NFT_ENDPOINT}/atomicmarket/v2/sales?${queryParams}`
       );
 
       if (!result.success) {

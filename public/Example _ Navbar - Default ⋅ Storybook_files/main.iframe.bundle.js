@@ -5124,7 +5124,7 @@ var getLowestPriceAsset = /*#__PURE__*/function () {
             };
             queryString = Object(_utils__WEBPACK_IMPORTED_MODULE_18__[/* toQueryString */ "c"])(queryObject);
             _context.next = 5;
-            return Object(_utils_browser_fetch__WEBPACK_IMPORTED_MODULE_17__[/* getFromApi */ "a"])("https://proton.api.atomicassets.io" + "/atomicmarket/v1/sales?" + queryString);
+            return Object(_utils_browser_fetch__WEBPACK_IMPORTED_MODULE_17__[/* getFromApi */ "a"])("https://proton.api.atomicassets.io" + "/atomicmarket/v2/sales?" + queryString);
 
           case 5:
             saleRes = _context.sent;

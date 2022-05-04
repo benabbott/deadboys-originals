@@ -167,7 +167,7 @@ export const DropdownList = styled.section<DropdownProps>`
 
     &:before {
       content: '';
-      background: #ffffff;
+      background: #000000;
       height: ${({ height }) => height || '400px'};
       width: 100%;
       position: fixed;
