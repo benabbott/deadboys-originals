@@ -1,6 +1,6 @@
 const customizationJson: ThemeProps = {
   // collection: 'original=352215253242,gravediggers=355154214155' ,
-  collection: '355154214155' ,
+  collection: '352215253242' ,
   owner: 'harrybird',
   typography: {
     h1: {
@@ -167,7 +167,7 @@ const customizationJson: ThemeProps = {
       textColor: 'white',
       textFont: 'caption',
       backgroundColor: 'red',
-      link: 'https://originals.deadboysinc.com/',
+      link: 'https://shop.deadboysinc.com/',
     },
   },
   myItemsPage: {
