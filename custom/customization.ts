@@ -71,7 +71,7 @@ const customizationJson: ThemeProps = {
         color: '#ffffff',
       },
       {
-        link: 'https://deadboysinc.com/members-area/',
+        link: 'https://deadboysinc.com/merch/my-account/',
         color: '#ffffff',
       },
       {
